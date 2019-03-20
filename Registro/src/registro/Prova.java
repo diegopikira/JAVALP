@@ -2,21 +2,22 @@ package registro;
 
 public class Prova {
 	// Atributos
-	public double[] notaAlunos = new double[4];
+	public float[] notaAlunos;
 	public int[] peso;
 
 	// Construtores
-	public Prova() {
-		this.notaAlunos =0;
+	public Prova(float[] notaAlunos, int[] peso) {
+		this.notaAlunos = 0.0;
 		this.peso = 1;
 	}
 
-	public double[] getNotaAlunos() {
+	public float[] NotaAlunos() {
 		return notaAlunos;
 	}
 
-	public void setNotaAlunos(double[] notaAlunos) {
+	public float[] setNotaAlunos(float[] notaAlunos) {
 		this.notaAlunos = notaAlunos;
+		return notaAlunos;
 	}
 
 	public int[] getPeso() {

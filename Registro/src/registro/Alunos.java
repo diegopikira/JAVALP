@@ -2,33 +2,40 @@ package registro;
 
 public class Alunos {
 	// Atributos
-	public int matricula;
-	public String nomeAluno;
-	public String curso;
+	private int matricula;
+	private String nomeAluno;
+	private String curso;
 
 	// Construtores
-
-	public int getMatricula() {
+	public Alunos(int matricula, String nomeAluno, String curso) {
+		super();
+		this.matricula = matricula;
+		this.nomeAluno = nomeAluno;
+		this.curso = curso;
+	}
+	private int getMatricula() {
 		return matricula;
 	}
 
-	public void setMatricula(int matricula) {
+	
+
+	private void setMatricula(int matricula) {
 		this.matricula = matricula;
 	}
 
-	public String getCurso() {
+	private String getCurso() {
 		return curso;
 	}
 
-	public void setCurso(String curso) {
+	private void setCurso(String curso) {
 		this.curso = curso;
 	}
 
-	public String getNomeAluno() {
+	private String getNomeAluno() {
 		return nomeAluno;
 	}
 
-	public void setNomeAluno(String nomeAluno) {
+	private void setNomeAluno(String nomeAluno) {
 		this.nomeAluno = nomeAluno;
 	}
 

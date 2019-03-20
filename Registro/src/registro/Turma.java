@@ -3,31 +3,25 @@ package registro;
 public class Turma {
 
 	// Atributos
-	public boolean maxAluno = false;
-	public static int vagasTurma = 40;
-	public String semestreTurma;
-	// public String nomeCurso;//FIX CODE
+	private Alunos[] alunos;
 
-	// Atributos
-	Turma() {
-		this.semestreTurma = "3ºsemestre";
+	public Turma(int qntAluno) {
+		this.setAlunos(new Alunos[qntAluno]);
 	}
 
-	public void addAlunos() {
-		if (maxAluno == false) {
-			Alunos aluno = new Alunos();
-			aluno.nomeAluno = Alunos.setNomeAluno(String);
-			aluno.matricula = Alunos.setMatricula(int);
-			aluno.curso= Curso.setNomeCurso(String);
-			vagasTurma -= 1;
-			if (vagasTurma == 0) {
-				maxAluno = true;
-			}
-		}
+	public Alunos[] getAlunos() {
+		return alunos;
+	}
+
+	public void setAlunos(Alunos[] alunos) {
+		this.alunos = alunos;
+	}
+
+	public void adcAlunos() {
+
 	}
 
 	public void deleteAluno() {
-		maxAluno = false;
 
 	}
 

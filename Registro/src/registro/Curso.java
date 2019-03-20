@@ -1,22 +1,21 @@
 package registro;
 
-public class Curso {
+class Curso {
 
-	//Atributos
-	public String[] nomeCurso;
-	
-	//Construtores
+	// Atributos
+	public String nomeCurso;
+
+	// Construtores
 	public Curso(){
 		this.nomeCurso = "Banco de Dados";
 	}
 
-	public String[] getNomeCurso() {
+	public String getNomeCurso() {
 		return nomeCurso;
 	}
 
-	public String setNomeCurso(String[] nomeCurso) {
-		this.nomeCurso = nomeCurso;
-		return null;
+	public String setNomeCurso(String nomeCurso) {
+		return this.nomeCurso = nomeCurso;
 	}
-
 }
+
