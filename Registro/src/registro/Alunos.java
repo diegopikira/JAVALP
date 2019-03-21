@@ -5,13 +5,23 @@ public class Alunos {
 	private int matricula;
 	private String nomeAluno;
 	private String curso;
+	private Notas[] notas;
 
 	// Construtores
-	Alunos(String nomeAluno, int matricula, String curso) {
+	Alunos(String nomeAluno, int matricula, String curso, int qntnotas) {
 		super();
 		this.matricula = matricula;
 		this.nomeAluno = nomeAluno;
 		this.curso = curso;
+		this.setNotas(new Notas[qntnotas]);
+	}
+
+	public Notas[] getNotas() {
+		return notas;
+	}
+
+	public void setNotas(Notas[] notas) {
+		this.notas = notas;
 	}
 
 	private int getMatricula() {
@@ -45,4 +55,10 @@ public class Alunos {
 	void consultaMatricula() {
 
 	}
+
+	boolean statusMatricula() {
+		return false;
+
+	}
+
 }

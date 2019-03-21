@@ -5,8 +5,7 @@ public class Turma {
 	// Atributos
 	private Alunos[] alunos;
 
-	
-	//Construtor
+	// Construtor
 	Turma(int qntAluno) {
 		this.setAlunos(new Alunos[qntAluno]);
 	}
@@ -19,7 +18,7 @@ public class Turma {
 		this.alunos = alunos;
 	}
 
-	private void adcAlunos() {
+	private void addAlunos() {
 
 	}
 
@@ -28,15 +27,6 @@ public class Turma {
 	}
 
 	private void imprimeTurma() {
-
-	}
-
-	boolean statusMatricula() {
-		return false;
-
-	}
-
-	public static void main(String[] args) {
 
 	}
 
