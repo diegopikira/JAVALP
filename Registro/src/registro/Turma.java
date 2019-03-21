@@ -5,27 +5,29 @@ public class Turma {
 	// Atributos
 	private Alunos[] alunos;
 
-	public Turma(int qntAluno) {
+	
+	//Construtor
+	Turma(int qntAluno) {
 		this.setAlunos(new Alunos[qntAluno]);
 	}
 
-	public Alunos[] getAlunos() {
+	private Alunos[] getAlunos() {
 		return alunos;
 	}
 
-	public void setAlunos(Alunos[] alunos) {
+	private void setAlunos(Alunos[] alunos) {
 		this.alunos = alunos;
 	}
 
-	public void adcAlunos() {
+	private void adcAlunos() {
 
 	}
 
-	public void deleteAluno() {
+	private void deleteAluno() {
 
 	}
 
-	public void imprimeTurma() {
+	private void imprimeTurma() {
 
 	}
 

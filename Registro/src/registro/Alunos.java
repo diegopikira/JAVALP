@@ -7,17 +7,16 @@ public class Alunos {
 	private String curso;
 
 	// Construtores
-	public Alunos(int matricula, String nomeAluno, String curso) {
+	Alunos(String nomeAluno, int matricula, String curso) {
 		super();
 		this.matricula = matricula;
 		this.nomeAluno = nomeAluno;
 		this.curso = curso;
 	}
+
 	private int getMatricula() {
 		return matricula;
 	}
-
-	
 
 	private void setMatricula(int matricula) {
 		this.matricula = matricula;
