@@ -1,32 +1,53 @@
 package registro;
 
+import java.util.Scanner;
+
 public class Turma {
 
 	// Atributos
-	private Alunos[] alunos;
+	private Alunos alunos[];
+	private int aux = 0;
+	static Scanner teclado = new Scanner(System.in);
 
 	// Construtor
 	Turma(int qntAluno) {
-		this.setAlunos(new Alunos[qntAluno]);
+		alunos = new Alunos[qntAluno];
 	}
 
-	private Alunos[] getAlunos() {
-		return alunos;
+	// Métodos
+	public boolean addAluno(Alunos aluno, int ultimoAluno) {
+
+		if (ultimoAluno == 0) {
+			alunos[ultimoAluno] = aluno;
+			System.out.println("\nAluno Cadastrado!");
+		} else {
+			for (int i = 0; i < ultimoAluno; i++) {
+				if (alunos[i].getMatricula() == aluno.getMatricula()) {
+					System.out.println("\nMatricula já existente.");
+					aux = 1;
+					break;
+				}
+
+			}
+
+		}
+		if (aux == 0) {
+			alunos[ultimoAluno] = aluno;
+			System.out.println("\nAluno Cadastrado!");
+			return true;
+		}
+		return false;
+
 	}
 
-	private void setAlunos(Alunos[] alunos) {
-		this.alunos = alunos;
-	}
-
-	private void addAlunos() {
+	public void deleteAluno() {
 
 	}
 
-	private void deleteAluno() {
-
-	}
-
-	private void imprimeTurma() {
+	public void imprimeTurma(Alunos aluno) {
+		for (int i = 0; i <= alunos.length; i++) {
+			System.out.println("Lista: " + aluno.nomeAluno[i] + "");
+		}
 
 	}
 

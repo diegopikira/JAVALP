@@ -3,61 +3,58 @@ package registro;
 public class Alunos {
 	// Atributos
 	private int matricula;
-	private String nomeAluno;
+	String nomeAluno;
 	private String curso;
-	private Notas[] notas;
+	private double notas;
 
 	// Construtores
-	Alunos(String nomeAluno, int matricula, String curso, int qntnotas) {
+	Alunos(int matricula, String nomeAluno, String curso, double notas) {
 		super();
 		this.matricula = matricula;
 		this.nomeAluno = nomeAluno;
 		this.curso = curso;
-		this.setNotas(new Notas[qntnotas]);
-	}
-
-	public Notas[] getNotas() {
-		return notas;
-	}
-
-	public void setNotas(Notas[] notas) {
 		this.notas = notas;
 	}
 
-	private int getMatricula() {
+	public double getNotas() {
+		return notas;
+	}
+
+	public void setNotas(double notas) {
+		this.notas = notas;
+	}
+
+	public int getMatricula() {
 		return matricula;
 	}
 
-	private void setMatricula(int matricula) {
+	public void setMatricula(int matricula) {
 		this.matricula = matricula;
 	}
 
-	private String getCurso() {
+	public String getCurso() {
 		return curso;
 	}
 
-	private void setCurso(String curso) {
+	public void setCurso(String curso) {
 		this.curso = curso;
 	}
 
-	private String getNomeAluno() {
+	String getNomeAluno() {
 		return nomeAluno;
 	}
 
-	private void setNomeAluno(String nomeAluno) {
+	public void setNomeAluno(String nomeAluno) {
 		this.nomeAluno = nomeAluno;
 	}
 
+	
+	
 	void consultaNomeAluno() {
 
 	}
 
 	void consultaMatricula() {
-
-	}
-
-	boolean statusMatricula() {
-		return false;
 
 	}
 

@@ -4,9 +4,10 @@ public class Notas {
 	// Atributos
 	private float provaAluno;
 	private int peso;
+	static int numProva;
 
 	// Construtores
-	public Notas(float provaAluno, int peso) {
+	public Notas(int numProva, int peso) {
 		super();
 		this.provaAluno = (float) 0.0;
 		this.peso = 1;
